@@ -1,0 +1,443 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header class="header d-flex align-items-center position-fixed w-100">
+            <div class="container">
+                <div class="header-content d-flex align-items-center justify-content-between">
+                    <a href="#home" class="logo order-lg -0 order-1">
+                        <img src="image/LOGO.png" alt="LOGO"/>
+                    </a>
+                    <div class="navigation order-lg-1 order-0">
+                        <input type="checkbox" id="toggle" class="d-none"/>
+                        <label for="toggle" class="toggle d-flex d-lg-none flex-column justify-content-between">
+                            <span class="bars bar-1 d-block rounded-3"></span>
+                            <span class="bars bar-2 d-block rounded-3"></span>
+                            <span class="bars bar-3 d-block rounded-3"></span>
+                        </label>
+                        <ul class="nav d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5">
+                            <li>
+                                <a href="#home" class="d-block text-decoration-none fw-bold active text-capitalize">home</a>
+                            </li>
+                            <li>
+                                <a href="#services" class="d-block text-decoration-none fw-bold text-capitalize">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="d-block text-decoration-none fw-bold text-capitalize">About Me</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" class="d-block text-decoration-none fw-bold text-capitalize">portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="d-block text-decoration-none fw-bold text-capitalize">contact me</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="hireMe()" class="new-btn order-2 d-flex justify-content-center align-items-center shadow-none border-0 text-capitalize fw-bold">
+                        hire me
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section class="hero pt-lg-0 d-flex align-items-center" id="home">
+            <div class="container">
+                <div class="hero-content d-flex justify-content-between align-items-end flex-column flex-lg-row gap-5">
+                    <div class="info w-100 h-100 position-relative d-flex flex-column align-items-center align-items-lg-start gap-4 user-select-none">
+                        <h5 class="name">
+                            Hi I am <span class="d-block">Kayla Vyanca</span>
+                        </h5>
+                        <h1 class="job fw-bold">Web Developer</h1>
+                        <ul class="social-media list-unstyled d-flex align-items-center gap-4">
+                            <li>
+                                <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(186, 186, 186, 1)">
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(186, 186, 186, 1)">
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(186, 186, 186, 1)">
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-center justify-content-center rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(186, 186, 186, 1)">
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="btns d-flex align-items-center gap-4">
+                            <button onclick="hireMe()" class="new-btn d-flex justify-content-center align-items-center shadow-none border-0 text-capitalize fw-bold">
+                                Hire Me
+                            </button>
+                            <button onclick="downloadCV()" class="new-btn d-flex justify-content-center align-items-center shadow-none border-0 text-capitalize fw-bold">
+                                Download CV
+                            </button>
+                        </div>
+                        <div class="unit-section d-flex justify-content-around align-items-center p-1 w-100">
+                            <div class="unit d-flex flex-column ps-3 gap-2 w-100">
+                                <span class="num">2+</span>
+                                <span class="title">Years of Experience</span>
+                            </div>
+                            <div class="unit d-flex flex-column ps-3 gap-2 w-100">
+                                <span class="num">10+</span>
+                                <span class="title">Project Done</span>
+                            </div>
+                            <div class="unit d-flex flex-column ps-3 gap-2 w-100">
+                                <span class="num">5+</span>
+                                <span class="title">Happy Clients</span>
+                            </div>
+                        </div>
+                        <div class="blob position-absolute w-100 h-100">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#fd6f00" d="M44,-52.4C52.2,-45.6, 50.7,-27.1,53.2,-9.8C55.7,7.5,62.3,23.6,58.9,38C55.4,52.4,41.8,65.1,28,64.8C14.3,64.5,0.2,51.2,-15.6,44.7C-31.4,38.1,-49,38.3,-55.3,30.4C-61.6,22.6,-56.7,6.7,-53.9,-9.6C-51.1,-25.9,-50.5,-42.6,-41.8,-49.3C-33.2,-56,-16.6,-52.6,0.7,-53.4C17.9,-54.2,35.8,-59.1,44,-52.4Z" transform="translate(100 100)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="image w-100 h-100 d-flex justify-content-center align-items-center mt-5 mt-lg-0 position-relative">
+                        <div class="person position-relative rounded-circle">
+                            <span class="circle-shadow rounded-circle position-absolute w-100 h-100"></span>
+                            <div class="image-1 position-absolute w-100 h-100 rounded-circle">
+                                <img src="image/kUCING.png" alt="Character" class="w-100 position-absolute"/>
+                            </div>
+                            <div class="image-2 position-absolute w-100 h-100 rounded-circle">
+                                <img src="image/kUCING.png" alt="Character" class="w-100 position-absolute"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service start-->
+        <section class="services py-5" id="services">
+            <div class="container">
+                <div class="title-header text-center">
+                    <h2 class="title text-capitalize">skills</h2>
+                    <p class="subtitle text-capitalize">
+                        Let’s bring your vision to life and turn your ideas into impactful digital experiences that leave a lasting impression
+                    </p>
+                </div>
+                <div class="services-content pt-3 row flex-wrap justify-content-center g-4">
+                    <div class="column col-md-4">
+                        <div class="card d-flex justify-content-center flex-column align-items-center gap-2">
+                            <img src="image/users-icon.png" alt="users-icon" class="card-img-top"/>
+                            <div class="card-body d-flex flex-column gap-2 text-center">
+                                <h5 class="card-title text-capitalize fw-bold">UI/UX Design</h5>
+                                <p class="card-text">
+                                    I design intuitive and aesthetically pleasing interfaces that enhance usability and drive user satisfaction. Each design is tailored to create seamless interactions and lasting impressions
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-md-4">
+                        <div class="card d-flex justify-content-center flex-column align-items-center gap-2">
+                            <img src="image/users-icon.png" alt="users-icon" class="card-img-top"/>
+                            <div class="card-body d-flex flex-column gap-2 text-center">
+                                <h5 class="card-title text-capitalize fw-bold">Responsive Web Design</h5>
+                                <p class="card-text">
+                                    Your website will adapt flawlessly to desktops, tablets, and smartphones, ensuring a consistent and accessible experience across all devices
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-md-4">
+                        <div class="card d-flex justify-content-center flex-column align-items-center gap-2">
+                            <img src="image/users-icon.png" alt="users-icon" class="card-img-top"/>
+                            <div class="card-body d-flex flex-column gap-2 text-center">
+                                <h5 class="card-title text-capitalize fw-bold">Front-End Development</h5>
+                                <p class="card-text">
+                                    Using clean, efficient, and scalable code with technologies like HTML, CSS, and JavaScript, I bring designs to life with smooth animations, interactive elements, and reliable performance
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-md-4">
+                        <div class="card d-flex justify-content-center flex-column align-items-center gap-2">
+                            <img src="image/users-icon.png" alt="users-icon" class="card-img-top"/>
+                            <div class="card-body d-flex flex-column gap-2 text-center">
+                                <h5 class="card-title text-capitalize fw-bold">Website Performance Optimization</h5>
+                                <p class="card-text">
+                                    I fine-tune website performance for faster load times, reduced bounce rates, and improved user engagement—ensuring your site operates at peak efficiency
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-md-4">
+                        <div class="card d-flex justify-content-center flex-column align-items-center gap-2">
+                            <img src="image/users-icon.png" alt="users-icon" class="card-img-top"/>
+                            <div class="card-body d-flex flex-column gap-2 text-center">
+                                <h5 class="card-title text-capitalize fw-bold">Design System</h5>
+                                <p class="card-text">
+                                    I create structured design systems with reusable components and clear guidelines, enabling your team to maintain design consistency and streamline development workflows
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-md-4">
+                        <div class="card d-flex justify-content-center flex-column align-items-center gap-2">
+                            <img src="image/users-icon.png" alt="users-icon" class="card-img-top"/>
+                            <div class="card-body d-flex flex-column gap-2 text-center">
+                                <h5 class="card-title text-capitalize fw-bold">Usability Testing & Evaluation</h5>
+                                <p class="card-text">
+                                    Through comprehensive usability testing, I identify pain points and refine interfaces based on real user feedback—ensuring your product evolves to meet actual user needs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- servive end -->
+        <section class="about py-5" id="about">
+            <div class="container">
+                <div class="title-header text-center">
+                    <h2 class="title text-capitalize">about me</h2>
+                    <p class="subtitle text-capitalize">
+                        Get to know about me & collaborate to craft digital solutions that not only look great but work seamlessly
+                    </p>
+                </div>
+                <div class="about-content mt-5 pt-5">
+                    <div class="info d-flex align-items-center justify-content-center gap-4 flex-column flex-lg-row">
+                        <div class="image w-100 h-100 d-flex justify-content-center align-items-center mt-5 mt-lg-0 position-relative">
+                            <div class="person position-relative rounded-circle">
+                                <span class="circle-shadow rounded-circle position-absolute w-100 h-100"></span>
+                                <div class="image-1 position-absolute w-100 h-100 rounded-circle">
+                                    <img src="image/kUCING.png" alt="Character" class="w-100 position-absolute"/>
+                                </div>
+                                <div class="image-2 position-absolute w-100 h-100 rounded-circle">
+                                    <img src="image/kUCING.png" alt="Character" class="w-100 position-absolute"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-desc w-100">
+                            <p class="desc mb-4">
+                                Kayla is a passionate Web Developer with expertise in front-end development technologies. Constantly staying updated on industry trends, I focus on building dynamic, responsive, and user-friendly websites. I thrive on transforming complex concepts into seamless digital experiences while solving technical challenges efficiently.
+                            </p>
+                            <button onclick="downloadCV()" class="new-btn d-flex justify-content-center align-items-center shadow-none border-0 text-capitalize fw-bold gap-2 mx-auto ms-lg-0">
+                                <img src="image/download-icon.svg" alt="download-icon"/>
+                                <span class="txt">Download CV</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="skill-progress d-flex flex-wrap justify-content-around align-items-center gap-5 mt-5 pt-5"></div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio start -->
+        <section class="portfolio py-5" id="portfolio">
+            <div class="container">
+                <div class="title-header text-center">
+                    <h2 class="title text-capitalize">portfolio</h2>
+                </div>
+                <div class="portfolio-content">
+                    <ul class="filtering-btns d-flex flex-wrap justify-content-center align-items-center gap-3 py-3 list-unstyled">
+                        <li class="new-btn justify-content-around align-items-center d-flex text-capitalize active" data-filter="all">all</li>
+                        <li class="new-btn justify-content-around align-items-center d-flex text-capitalize" data-filter="website">website design</li>
+                        <li class="new-btn justify-content-around align-items-center d-flex text-capitalize" data-filter="app-mobile">app mobile</li>
+                        <li class="new-btn justify-content-around align-items-center d-flex text-capitalize" data-filter="app-desktop">app desktop</li>
+                        <li class="new-btn justify-content-around align-items-center d-flex text-capitalize" data-filter="branding">branding</li>
+                    </ul>
+                    <div class="portfolio-card d-flex flex-wrap justify-content-center align-items-center gap-5">
+                        <div class="card rounded-3 border-0" data-filter="website">
+                            <img src="image/porftolio-1.png"  alt="portfolio-1" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">website</small>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-0" data-filter="app-desktop">
+                            <img src="image/porftolio-2.png" alt="portfolio-2" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">app desktop</small>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-0" data-filter="app-mobile">
+                            <img src="image/porftolio-3.png" alt="portfolio-3" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">app mobile</small>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-0" data-filter="branding">
+                            <img src="image/porftolio-2.png" alt="portfolio-4" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">branding</small>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-0" data-filter="app-mobile">
+                            <img src="image/porftolio-3.png" alt="portfolio-3" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">app mobile</small>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-0" data-filter="branding">
+                            <img src="image/porftolio-2.png" alt="portfolio-4" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">branding</small>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-0" data-filter="app-mobile">
+                            <img src="image/porftolio-3.png" alt="portfolio-3" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">app mobile</small>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-0" data-filter="branding">
+                            <img src="image/porftolio-2.png" alt="portfolio-4" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">branding</small>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-0" data-filter="app-mobile">
+                            <img src="image/porftolio-3.png" alt="portfolio-3" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">app mobile</small>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-0" data-filter="branding">
+                            <img src="image/porftolio-2.png" alt="portfolio-4" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">branding</small>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-0" data-filter="app-mobile">
+                            <img src="image/porftolio-3.png" alt="portfolio-3" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">app mobile</small>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-0" data-filter="branding">
+                            <img src="image/porftolio-2.png" alt="portfolio-4" class="card-img-top"/>
+                            <div class="card-footer d-flex justify-content-between align-items-center text-capitalize">
+                                <small class="text-muted fw-bold">last update</small>
+                                <small class="text-muted fw-bold">branding</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio end-->
+        <section class="contact py-5" id="contact">
+            <div class="container">
+                <div class="title-header text-center">
+                    <h2 class="title text-capitalize">contact me</h2>
+                    <p class="subtitle">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quaerat blanditiis sunt. Quod voluptate aperiam illum possimus! Nostrum distinctio, at fugit deserunt, aliquam explicabo ipsa culpa id, sapiente cupiditate eligendi!
+                    </p>
+                </div>
+                <div id="contactForm" class="contact-form d-flex flex-wrap justify-content-center gap-4 pt-5">
+                    <div class="input overflow-hidden">
+                        <input type="text" name="name" placeholder="name" class="w-100 border-0 ps-3 py-2 text-capitalize"/>
+                    </div>
+                    <div class="input overflow-hidden">
+                        <input type="email" name="email" placeholder="email" class="w-100 border-0 ps-3 py-2"/>
+                    </div>
+                    <div class="input overflow-hidden">
+                        <input type="tel" name="phone" placeholder="phone" class="w-100 border-0 ps-3 py-2 text-capitalize"/>
+                    </div>
+                    <div class="input select-services position-relative">
+                        <div class="select-value d-flex align-items-center ps-3 text-capitalize">
+                            <span class="txt">Services</span>
+                            <span class="arrow d-flex justify-content-center align-items-center position-absolute">
+                                <img src="image/arrow.svg" alt="arrow"/>
+                            </span>
+                        </div>
+                        <ul class="options d-flex flex-column ps-0 w-100 overflow-auto position-absolute text-capitalize">
+                            <li class="py-2 ps-3" data-value="option-1">UI/UX Web Design</li>
+                            <li class="py-2 ps-3" data-value="option-2">UI/UX Mobile Design</li>
+                            <li class="py-2 ps-3" data-value="option-3">Web Developer</li>
+                            <li class="py-2 ps-3" data-value="option-4">Front-End Web Developer</li>
+                            <li class="py-2 ps-3" data-value="option-5">Design System</li>
+                            <li class="py-2 ps-3" data-value="option-6">Responsive Web</li>
+                        </ul>
+                    </div>
+                    <div class="input overflow-hidden">
+                        <input type="text" name="timeline" placeholder="timeline" class="w-100 border-0 ps-3 py-2 text-capitalize"/>
+                    </div>
+                    <div class="input overflow-hidden">
+                        <textarea name="project details" rows="7" placeholder="project details" class="w-100 border-0 ps-3 py-2 text-capitalize"></textarea>
+                    </div>
+                    <div class="input overflow-hidden d-flex justify-content-lg-end justify-content-center">
+                        <input type="submit" class="new-btn border-0 ps-3 py-2 text-capitalize fw-bold" value="send"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--footer start-->
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="footer-content d-flex flex-column gap-4 align-items-center">
+                    <a href="#home" class="logo order-lg-0 order-1">
+                        <img src="image/LOGO.png" alt="LOGO"/>
+                    </a>
+                    <ul class="nav d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5">
+                        <li><a href="#home" class="d-block text-decoration-none fw-bold active text-capitalize">home</a></li>
+                        <li><a href="#services" class="d-block text-decoration-none fw-bold text-capitalize">skills</a></li>
+                        <li><a href="#about" class="d-block text-decoration-none fw-bold text-capitalize">about me</a></li>
+                        <li><a href="#portfolio" class="d-block text-decoration-none fw-bold text-capitalize">portfolio</a></li>
+                        <li><a href="#contact" class="d-block text-decoration-none fw-bold text-capitalize">contact me</a></li>
+                    </ul>
+                    <ul class="social-media list-unstyled d-flex align-items-center gap-4">
+                        <li><a href="#" class="d-flex align-items-center justify-content-center rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(186,186,186,1)"></svg></a></li>
+                        <li><a href="#" class="d-flex align-items-center justify-content-center rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(186,186,186,1)"></svg></a></li>
+                        <li><a href="#" class="d-flex align-items-center justify-content-center rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(186,186,186,1)"></svg></a></li>
+                        <li><a href="#" class="d-flex align-items-center justify-content-center rounded-circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(186,186,186,1)"></svg></a></li>
+                    </ul>
+                    <div class="action d-flex gap-4 align-items-center flex-wrap">
+                        <a href="" class="d-flex align-items-center gap-2 text-decoration-none fw-bold">
+                            <span class="icon d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(149,149,149,1)">
+                                    <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path>
+                                </svg>
+                            </span>
+                            <span class="txt">kaylavyancaa@gmail.com</span>
+                        </a>
+                        <a href="tel:+62 878 8009 9393" class="d-flex align-items-center gap-2 text-decoration-none fw-bold">
+                            <span class="icon d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(149,149,149,1)">
+                                </svg>
+                            </span>
+                            <span class="txt">+62 878 8009 9393</span>
+                        </a>
+                    </div>
+                    <span class="copyright d-block px-4 pt-2 border-top">Designed by Kayla Vyanca Web Developer</span>
+                </div>
+            </div>
+        </footer>
+        <!--footer end-->
+        <!--arrow up-->
+        <span class="arrow-up d-flex overflow-hidden position-fixed align-items-center rounded-3 justify-content-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(149,149,149,1)">
+                <path d="M11.9999 13.1714L16.9497 8.22168L18 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+            </svg>
+        </span>
+        <!--arrow up end-->
+    <!-- Todo JS File -->
+    <script src="index.js"></script>
+    </body>
+</html>
